@@ -1,0 +1,40 @@
+/* resume.css — styles for the resume page. Mobile First. */
+
+.resume {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.resume-header h1 {
+  margin-bottom: var(--space-sm);
+  font-size: 1.75rem;
+}
+
+.resume-header p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.resume-list {
+  display: grid;
+  gap: var(--space-md);
+  padding: 0;
+  list-style: none;
+}
+
+.resume-list h3 {
+  margin-bottom: var(--space-sm);
+  font-size: 1.1rem;
+}
+
+.period {
+  margin-top: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 48rem) {
+  .resume-header h1 {
+    font-size: 2.25rem;
+  }
+}

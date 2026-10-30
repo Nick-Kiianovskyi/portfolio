@@ -1,0 +1,39 @@
+/* print.css — styles for printing pages (incl. the printable resume). */
+
+@page {
+  margin: 1.5cm;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 12pt;
+}
+
+.site-header,
+.lang-nav,
+.site-footer {
+  display: none;
+}
+
+main {
+  padding: 0;
+  gap: 1rem;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #999999;
+  background-color: #ffffff;
+}
+
+a[href^="http"]::after,
+a[href^="mailto"]::after {
+  content: " (" attr(href) ")";
+  font-size: 10pt;
+  color: #555555;
+}
