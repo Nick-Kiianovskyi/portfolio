@@ -147,3 +147,9 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Office temporary lock files
+~$*
+
+# Local source documents (not published)
+files/work_experience*.docx

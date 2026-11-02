@@ -12,7 +12,8 @@ body {
 
 .site-header,
 .lang-nav,
-.site-footer {
+.site-footer,
+.sidebar {
   display: none;
 }
 
@@ -26,9 +27,57 @@ a {
   text-decoration: none;
 }
 
-.card {
+.card,
+.project-card,
+.why-card,
+.edu-card,
+.stat-card,
+.stack-group,
+.timeline-card,
+.about-card,
+.resume-list > li {
   border: 1px solid #999999;
   background-color: #ffffff;
+  color: #000000;
+  box-shadow: none;
+}
+
+.project-card {
+  min-height: 0;
+}
+
+.project-media {
+  min-height: 0;
+}
+
+.project-media img {
+  position: static;
+  width: 100%;
+  height: auto;
+}
+
+.project-overlay {
+  position: static;
+  opacity: 1 !important;
+  pointer-events: auto;
+  transition: none !important;
+  background: none;
+}
+
+.project-card:hover .project-media img {
+  filter: none;
+  transform: none;
+}
+
+.project-card,
+.why-card,
+.edu-card,
+.stat-card,
+.stack-group,
+.timeline-card,
+.about-card,
+.resume-list > li {
+  break-inside: avoid;
 }
 
 a[href^="http"]::after,
