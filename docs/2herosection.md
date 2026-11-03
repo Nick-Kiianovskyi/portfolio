@@ -9,7 +9,7 @@ Desktop — две колонки, Mobile — одна.
 
 ## Что сделано
 
-### HTML (index.html, uk/index.html, en/index.html)
+### HTML (index.html, en/index.html)
 
 Старый блок `.intro` заменён на Hero:
 
@@ -20,14 +20,14 @@ Desktop — две колонки, Mobile — одна.
     <ul class="hero-positions">…3 должности…</ul>
     <p class="hero-description">20+ років досвіду…</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="resume.html">View Resume</a>
-      <a class="btn btn-secondary" href="…UA.pdf" download>Download CV</a>
-      <a class="btn btn-secondary" href="https://github.com/nick">GitHub</a>
-      <a class="btn btn-secondary" href="https://www.linkedin.com/in/nick">LinkedIn</a>
+      <a class="btn btn-primary" href="work_experience_UA.html">View Resume</a>
+      <a class="btn btn-secondary" href="files/cv_fullstack_kiianovskyi.pdf" download>Download CV</a>
+      <a class="btn btn-secondary" href="https://github.com/Nick-Kiianovskyi">GitHub</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/nick-kiyanovskiy-537a90b6">LinkedIn</a>
     </div>
   </div>
   <figure class="hero-media">
-    <img class="hero-photo" src="images/portrait.svg" alt="…" width="480" height="480">
+    <img class="hero-photo" src="images/foto1.jpg" alt="…" width="243" height="315">
   </figure>
 </section>
 ```
@@ -35,8 +35,8 @@ Desktop — две колонки, Mobile — одна.
 - Имя набрано заглавными через `text-transform: uppercase` (в разметке —
   обычный регистр для корректного чтения скринридерами).
 - Описания: UA-версия — украинская, EN-версия — английская.
-- Download CV в hero ведёт на PDF соответствующего языка (на uk/ и en/
-  страницах пути исправлены на `../files/…`, `../images/…`).
+- Download CV в hero ведёт на PDF соответствующего языка (на `/en/`
+  странице пути исправлены на `../files/…`, `../images/…`).
 
 ### CSS (css/style.css)
 
@@ -50,11 +50,11 @@ Desktop — две колонки, Mobile — одна.
 - Кнопки: `.hero-actions { display: flex; flex-wrap: wrap; gap }` —
   переносятся строками на узких экранах; `.btn-primary` (акцент) +
   `.btn-secondary` (обводка), увеличенная touch-область 0.6rem × 1.1rem.
-- Заглушка фото: `images/portrait.svg` (серый силуэт, 480×480).
+- Фото: `images/foto1.jpg` (243×315).
 
 ### Исправленные проблемы
 
-1. **Битые пути на uk/ и en/ страницах** — в hero были указаны
+1. **Битые пути на /en/ странице** — в hero были указаны
    `files/…` и `images/…` без `../`. Найдено автопроверкой, исправлено
    для hero-фото, кнопок Download CV и остальных ссылок на этих страницах.
 2. **Удалены устаревшие правила `.intro h1`** в style.css (раздел intro
@@ -77,6 +77,5 @@ Desktop — две колонки, Mobile — одна.
 
 ## Оставшиеся TODO
 
-- [ ] Заменить `images/portrait.svg` на реальное профессиональное фото
-      (форматы: WebP/JPEG, размер ≈ 480×480 или больше).
-- [ ] Подставить реальные ссылки GitHub и LinkedIn.
+- [x] Заменить `images/portrait.svg` на реальное профессиональное фото.
+- [x] Подставить реальные ссылки GitHub и LinkedIn.

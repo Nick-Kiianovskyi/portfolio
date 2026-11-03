@@ -13,7 +13,7 @@
 5. **Data analyst** — Анализ данных: Excel, Google Sheets, Python, R, Power BI, Tableau
 6. **Project management** — Реализация внедрения электронного документооборота Documentum на предприятии. Внедрение системы электронного архивирования
 
-Добавлено на все три index-страницы после Education, перед Contact.
+Добавлено на обе index-страницы после Education, перед Contact.
 
 ## Разметка
 

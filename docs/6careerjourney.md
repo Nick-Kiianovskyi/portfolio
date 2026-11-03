@@ -6,16 +6,29 @@
 
 ## Содержимое
 
-### Позиция 1 — Consultant SAP SD, QM (2017 - Present)
-- Configuring SD/QM functionality (setup of company codes, markets, trade documents)
-- Development and preparation of business process documentation, technical tasks for ABAP developers
+### Позиция 1 — Data Analyst (2024 - Present)
+- Data cleansing and preparation
+- Data transformation and filtering
+- Visualization and report development
+- Business intelligence dashboards
+
+### Позиция 2 — Consultant SAP SD, QM (05/2024 - Present)
+- Configuring SD/QM functionality (company codes, markets, trade documents)
+- Preparing business process documentation and technical specifications for ABAP developers
 - User consultation
 - Creating roles, transactions and reports
-- Preparation of analytical information for key users
-- Archiving QM, SD historical data, preparation proceeding, analysis
-- Reconciliation data after migration
+- Preparing analytical information for key users
+- Archiving historical QM and SD data: preparation and analysis
+- Data reconciliation after migration
 
-### Позиция 2 — Project manager, Consultant IT, Data Analyst, Developer (2013-2017)
+### Позиция 3 — Consultant SAP SD (03/2017 - 05/2024)
+- Configuring SD/QM functionality (company codes, markets, trade documents)
+- Preparing business process documentation and technical specifications for ABAP developers
+- User consultation
+- Creating roles, transactions and reports
+- Preparing analytical information for key users
+
+### Позиция 4 — Project manager, Consultant IT, Data Analyst, Developer (2013-2017)
 - Project team management (5-15 participants)
 - Market analysis solutions, search for contractors, prepare development documentation
 - Time management, negotiations with stakeholders
@@ -24,12 +37,12 @@
 - User consultation
 - Support of developed IT systems
 
-### Позиция 3 — Head Division, Leading engineer programmer, ArcelorMittal Kryviy Rih, Ukraine (2001-2013)
+### Позиция 5 — Head Division, Leading engineer programmer, ArcelorMittal Kryviy Rih, Ukraine (2001-2013)
 - Organization, planning, management works IT division
 - Development and implementation IT system (Oracle)
 - Development and preparation of business process documentation
 
-Размещено на всех трёх index-страницах после Technical Stack, перед Projects.
+Размещено на обеих index-страницах после Technical Stack, перед Projects.
 
 ## Разметка
 
@@ -69,7 +82,7 @@
 | Проверка | Результат |
 |---|---|
 | Вертикальный timeline оформлен | ✅ |
-| 3 позиции с корректными датами | ✅ |
+| 5 позиций с корректными датами | ✅ |
 | Все пункты из описания добавлены | ✅ |
 | Современный дизайн с точками и линиями | ✅ |
 | Адаптивность | ✅ |

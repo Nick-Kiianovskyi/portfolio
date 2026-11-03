@@ -14,7 +14,7 @@
 | Enterprise | SAP SD, SAP QM, SAP S/4HANA |
 | Tools | Git, GitHub, Postman, Vercel, VS Code |
 
-Добавлено на все три index-страницы (`index.html`, `uk/index.html`, `en/index.html`) после Statistics, перед Projects.
+Добавлено на обе index-страницы (`index.html`, `en/index.html`) после Statistics, перед Projects.
 
 ## Разметка
 

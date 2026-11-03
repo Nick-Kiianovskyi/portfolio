@@ -2,14 +2,14 @@
 
 ## Задача
 
-Секция Contact с ссылками и SVG-иконками, большая кнопка Contact Me, современный футер с текстом © 2026 Nikolay Kiyanovskiy All Rights Reserved. Кнопки ведут на реальные ссылки (без JS).
+Секция Contact с ссылками и SVG-иконками, большая кнопка Contact Me, современный футер с текстом © 2026 Mykola Kiianovskyi All Rights Reserved. Кнопки ведут на реальные ссылки (без JS).
 
 ## Ссылки
 
 - Email: k.creideiki@gmail.com (mailto:)
 - GitHub: https://github.com/Nick-Kiianovskyi
 - LinkedIn: https://www.linkedin.com/in/nick-kiyanovskiy-537a90b6
-- Telegram: https://t.me/k_creideiki
+- Telegram: https://t.me/nickel_2437
 
 Кнопка Contact Me ведёт на mailto:k.creideiki@gmail.com.
 
@@ -34,13 +34,13 @@
 ```html
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>© 2026 Nikolay Kiyanovskiy</p>
+    <p>© 2026 Mykola Kiianovskyi</p>
     <p>All Rights Reserved</p>
   </div>
 </footer>
 ```
 
-Размещено на всех трёх index-страницах (корень, uk/, en/). Удалены старые блоки contact/skills из корневой страницы.
+Размещено на обеих index-страницах (корень и `/en/`). Удалены старые блоки contact/skills из корневой страницы.
 
 ## Стили
 

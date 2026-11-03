@@ -18,11 +18,14 @@ index.html                 Ukrainian home page
 en/index.html              English home page
 work_experience_UA.html    Ukrainian work-experience page
 work_experience_EN.html    English work-experience page
+404.html                   Custom GitHub Pages not-found page
+robots.txt                 Crawler rules
+sitemap.xml                Sitemap with hreflang alternates
 css/style.css              Main styles
 css/resume.css             Work-experience page styles
 css/print.css              Print styles
 files/                     CV PDFs
-images/                    Project images
+images/                    Project images and social preview
 ```
 
 ## Local preview
@@ -36,5 +39,19 @@ python -m http.server 8000
 
 ## Deploy
 
-Publish the repository root as a static site (GitHub Pages, Netlify, Vercel, or
-any static hosting). The site uses relative paths and works from a subdirectory.
+The site is published from the repository root with GitHub Pages:
+
+- Ukrainian: <https://nick-kiianovskyi.github.io/portfolio/>
+- English: <https://nick-kiianovskyi.github.io/portfolio/en/>
+
+All paths inside the site are relative, so it also works from any other static
+host or subdirectory.
+
+## SEO
+
+Every page contains a canonical URL, `hreflang` alternates (including
+`x-default`), Open Graph and Twitter Card metadata. `robots.txt` and
+`sitemap.xml` live in the repository root.
+
+If a custom domain is added later, update the absolute URLs in the four HTML
+pages, `robots.txt` and `sitemap.xml`.

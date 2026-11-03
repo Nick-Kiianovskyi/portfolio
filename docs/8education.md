@@ -11,7 +11,7 @@
 3. Specialist Degree in Economics and Mathematics — Kryvyi Rih National University — 1999–2000
 4. Bachelor's Degree in Economic Cybernetics — Kryvyi Rih National University — 1995–1999
 
-Добавлено на все три index-страницы после Featured Projects, перед Contact.
+Добавлено на обе index-страницы после Featured Projects, перед Contact.
 
 ## Разметка
 

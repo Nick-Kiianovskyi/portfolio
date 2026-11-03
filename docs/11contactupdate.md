@@ -7,7 +7,7 @@
 
 ## Реализация
 
-### Hero (index.html, uk/index.html, en/index.html)
+### Hero (index.html, en/index.html)
 Добавлен блок `.hero-contacts` сразу под `<figure class="hero-media">` в hero-секции. Содержит только иконки (Email, GitHub, LinkedIn, Telegram) без текстовых адресов. Ссылки ведут на реальные адреса, без JavaScript.
 
 ### Контакты

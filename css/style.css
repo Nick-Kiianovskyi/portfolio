@@ -55,7 +55,10 @@ ul {
 }
 
 html {
-  scroll-padding-top: calc(var(--header-height) + 1rem);
+  /* Keep anchor targets just clear of the fixed mobile header (including
+     its 1px border) without adding extra whitespace above the section.
+     On desktop the header is static, so the offset is removed below. */
+  scroll-padding-top: calc(var(--header-height) + 1px);
 }
 
 .visually-hidden {
@@ -968,6 +971,9 @@ main {
 }
 
 @media (min-width: 72rem) {
+  html {
+    scroll-padding-top: 0;
+  }
   body {
     padding-top: 0;
   }
