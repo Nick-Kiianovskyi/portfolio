@@ -176,6 +176,12 @@ html {
   text-underline-offset: 0.25em;
 }
 
+@media (min-width: 48rem) {
+  .lang-nav ul {
+    flex-direction: row;
+  }
+}
+
 .btn-download {
   display: inline-block;
   padding: 0.4rem 0.9rem;
@@ -1051,6 +1057,13 @@ main {
   }
 
   .nav-toggle-label {
+    display: none;
+  }
+
+  /* Home pages use the sidebar for section navigation, so hide the duplicate
+     header menu once the sidebar becomes visible. */
+  .page-home .nav-toggle,
+  .page-home .header-menu {
     display: none;
   }
 
