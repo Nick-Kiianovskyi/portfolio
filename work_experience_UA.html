@@ -1,14 +1,32 @@
 <!doctype html>
-<html lang="uk">
+<html lang="uk" class="no-js">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Досвід роботи — Микола Кияновський</title>
     <meta
       name="description"
       content="Детальний досвід роботи Миколи Кияновського: SAP, Oracle, аналіз даних, управління проєктами."
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="fonts/onest-cyrillic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/literata-cyrillic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.css" media="all" />
     <link rel="stylesheet" href="css/resume.css" media="all" />
     <link rel="stylesheet" href="css/print.css" media="print" />
@@ -60,17 +78,64 @@
       name="twitter:image"
       content="https://nick-kiianovskyi.github.io/portfolio/images/og-cover.png"
     />
-    <meta name="theme-color" content="#12141a" />
+    <meta
+      name="theme-color"
+      content="#0e1014"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#f4f1ea"
+      media="(prefers-color-scheme: light)"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://nick-kiianovskyi.github.io/portfolio/#person",
+        "name": "Микола Кияновський",
+        "alternateName": "Mykola Kiianovskyi",
+        "url": "https://nick-kiianovskyi.github.io/portfolio/",
+        "image": "https://nick-kiianovskyi.github.io/portfolio/images/foto1.jpg",
+        "jobTitle": "Full Stack Developer, SAP Consultant, Data Analyst",
+        "email": "mailto:k.creideiki@gmail.com",
+        "sameAs": [
+          "https://github.com/Nick-Kiianovskyi",
+          "https://www.linkedin.com/in/nick-kiyanovskiy-537a90b6",
+          "https://t.me/nickel_2437"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": "https://nick-kiianovskyi.github.io/portfolio/work_experience_UA.html#profile",
+        "url": "https://nick-kiianovskyi.github.io/portfolio/work_experience_UA.html",
+        "name": "Досвід роботи — Микола Кияновський",
+        "inLanguage": "uk",
+        "mainEntity": {
+          "@id": "https://nick-kiianovskyi.github.io/portfolio/#person"
+        }
+      }
+    </script>
+    <script src="js/site.js" defer></script>
   </head>
   <body class="page-resume">
+    <a class="skip-link" href="#main-content">Перейти до змісту</a>
     <header class="site-header">
       <div class="header-inner">
         <a class="site-logo" href="index.html">Mykola Kiianovskyi</a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-label"
-          ><span class="visually-hidden">Меню</span></label
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="header-menu"
         >
-        <div class="header-menu">
+          <span class="visually-hidden">Меню</span>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="header-menu" id="header-menu">
           <nav class="site-nav" aria-label="Основна навігація">
             <ul>
               <li><a href="index.html">Головна</a></li>
@@ -97,11 +162,11 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <article class="resume">
         <header class="resume-header">
           <h1>Mykola Kiianovskyi</h1>
-          <p>Full Stack Developer / SAP Consultant / Data Analyst</p>
+          <p lang="en">Full Stack Developer / SAP Consultant / Data Analyst</p>
         </header>
 
         <section aria-labelledby="contacts-heading">
@@ -189,7 +254,10 @@
           <ul class="resume-list">
             <li>
               <h3>Аналітик даних</h3>
-              <p class="period">2024 — донині · Незалежна практика / фриланс</p>
+              <p class="period">
+                <time datetime="2024">2024</time> — донині · Незалежна практика
+                / фриланс
+              </p>
               <ul>
                 <li>Очищення та підготовка даних</li>
                 <li>Трансформація, фільтрація</li>
@@ -201,7 +269,8 @@
             <li>
               <h3>Консультант SAP SD, QM</h3>
               <p class="period">
-                05/2024 — донині · ArcelorMittal Кривий Ріг, Україна
+                <time datetime="2024-05">05/2024</time> — донині · ArcelorMittal
+                Кривий Ріг, Україна
               </p>
               <p class="period">Договір з цивільним підрядником</p>
               <ul>
@@ -225,7 +294,9 @@
             <li>
               <h3>Консультант SAP SD</h3>
               <p class="period">
-                03/2017 — 05/2024 · ArcelorMittal Кривий Ріг, Україна
+                <time datetime="2017-03">03/2017</time> —
+                <time datetime="2024-05">05/2024</time> · ArcelorMittal Кривий
+                Ріг, Україна
               </p>
               <ul>
                 <li>
@@ -247,7 +318,9 @@
                 Керівник проєктів, IT-консультант, аналітик даних, розробник
               </h3>
               <p class="period">
-                09/2013 — 03/2017 · ArcelorMittal Кривий Ріг, Україна
+                <time datetime="2013-09">09/2013</time> —
+                <time datetime="2017-03">03/2017</time> · ArcelorMittal Кривий
+                Ріг, Україна
               </p>
               <ul>
                 <li>
@@ -272,7 +345,9 @@
                 Керівник підрозділу, провідний інженер-програміст
               </h3>
               <p class="period">
-                02/2001 — 09/2013 · ArcelorMittal Кривий Ріг, Україна
+                <time datetime="2001-02">02/2001</time> —
+                <time datetime="2013-09">09/2013</time> · ArcelorMittal Кривий
+                Ріг, Україна
               </p>
               <ul>
                 <li>
@@ -296,26 +371,38 @@
                 робототехніки
               </h3>
               <p class="period">
-                2022–2026 · Криворізький національний університет (очікуване
-                завершення — 06/2026)
+                <time datetime="2022">2022</time>–<time datetime="2026"
+                  >2026</time
+                >
+                · Криворізький національний університет (очікуване завершення —
+                <time datetime="2026-06">06/2026</time>)
               </p>
             </li>
             <li>
               <h3>Магістр економіки</h3>
               <p class="period">
-                2000–2001 · Криворізький національний університет
+                <time datetime="2000">2000</time>–<time datetime="2001"
+                  >2001</time
+                >
+                · Криворізький національний університет
               </p>
             </li>
             <li>
               <h3>Економіст-математик</h3>
               <p class="period">
-                1999–2000 · Криворізький національний університет
+                <time datetime="1999">1999</time>–<time datetime="2000"
+                  >2000</time
+                >
+                · Криворізький національний університет
               </p>
             </li>
             <li>
               <h3>Бакалавр з економічної кібернетики</h3>
               <p class="period">
-                1995–1999 · Криворізький національний університет
+                <time datetime="1995">1995</time>–<time datetime="1999"
+                  >1999</time
+                >
+                · Криворізький національний університет
               </p>
             </li>
           </ul>
@@ -326,8 +413,9 @@
           <ul class="resume-list">
             <li>
               <p>
-                Налаштування процесу продажів на підприємствах «ЛМЗ» (2018) та
-                «Steelservice» (2019).
+                Налаштування процесу продажів на підприємствах «ЛМЗ»
+                (<time datetime="2018">2018</time>) та «Steelservice»
+                (<time datetime="2019">2019</time>).
               </p>
             </li>
             <li>
@@ -392,12 +480,12 @@
           <ul class="download-list">
             <li>
               <a href="files/cv_fullstack_kiianovskyi.pdf" download
-                >CV — Full Stack Developer (PDF)</a
+                >CV — <span lang="en">Full Stack Developer</span> (PDF)</a
               >
             </li>
             <li>
               <a href="files/cv_SAP_SD_consultant.pdf" download
-                >CV — SAP Consultant SD|QM (PDF)</a
+                >CV — <span lang="en">SAP Consultant SD|QM</span> (PDF)</a
               >
             </li>
           </ul>

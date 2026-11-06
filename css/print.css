@@ -4,16 +4,27 @@
   margin: 1.5cm;
 }
 
+html,
 body {
   background-color: #ffffff;
+  background-image: none;
   color: #000000;
+}
+
+body {
   font-size: 12pt;
+}
+
+body::after {
+  display: none;
 }
 
 .site-header,
 .lang-nav,
 .site-footer,
-.sidebar {
+.sidebar,
+.skip-link,
+.notice-dialog {
   display: none;
 }
 
@@ -34,7 +45,7 @@ a {
 .stat-card,
 .stack-group,
 .timeline-card,
-.about-card,
+.about-fact,
 .resume-list > li {
   border: 1px solid #999999;
   background-color: #ffffff;
@@ -42,30 +53,27 @@ a {
   box-shadow: none;
 }
 
+.btn-primary,
+.btn-cv,
+.btn-download,
+.project-tag {
+  background-color: #ffffff;
+  border-color: #999999;
+  color: #000000;
+}
+
 .project-card {
   min-height: 0;
 }
 
 .project-media {
-  min-height: 0;
+  aspect-ratio: auto;
 }
 
 .project-media img {
   position: static;
   width: 100%;
   height: auto;
-}
-
-.project-overlay {
-  position: static;
-  opacity: 1 !important;
-  pointer-events: auto;
-  transition: none !important;
-  background: none;
-}
-
-.project-card:hover .project-media img {
-  filter: none;
   transform: none;
 }
 
@@ -75,7 +83,7 @@ a {
 .stat-card,
 .stack-group,
 .timeline-card,
-.about-card,
+.about-fact,
 .resume-list > li {
   break-inside: avoid;
 }

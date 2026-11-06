@@ -1,14 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Mykola Kiianovskyi — portfolio</title>
     <meta
       name="description"
       content="Personal portfolio of Mykola Kiianovskyi: projects, skills, contacts."
     />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="../fonts/onest-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/literata-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="../css/style.css" media="all" />
     <link rel="stylesheet" href="../css/print.css" media="print" />
     <link
@@ -59,17 +77,181 @@
       name="twitter:image"
       content="https://nick-kiianovskyi.github.io/portfolio/images/og-cover.png"
     />
-    <meta name="theme-color" content="#12141a" />
+    <meta
+      name="theme-color"
+      content="#0e1014"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#f4f1ea"
+      media="(prefers-color-scheme: light)"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://nick-kiianovskyi.github.io/portfolio/#person",
+        "name": "Mykola Kiianovskyi",
+        "alternateName": "Микола Кияновський",
+        "url": "https://nick-kiianovskyi.github.io/portfolio/en/",
+        "image": "https://nick-kiianovskyi.github.io/portfolio/images/foto1.jpg",
+        "jobTitle": "Full Stack Developer, SAP Consultant, Data Analyst",
+        "email": "mailto:k.creideiki@gmail.com",
+        "sameAs": [
+          "https://github.com/Nick-Kiianovskyi",
+          "https://www.linkedin.com/in/nick-kiyanovskiy-537a90b6",
+          "https://t.me/nickel_2437"
+        ],
+        "knowsLanguage": ["uk", "en", "ru", "fr"],
+        "knowsAbout": [
+          "SAP SD",
+          "SAP QM",
+          "Oracle",
+          "PL/SQL",
+          "React",
+          "TypeScript",
+          "Python",
+          "Data analysis"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": "https://nick-kiianovskyi.github.io/portfolio/en/#profile",
+        "url": "https://nick-kiianovskyi.github.io/portfolio/en/",
+        "name": "Mykola Kiianovskyi — portfolio",
+        "inLanguage": "en",
+        "mainEntity": {
+          "@id": "https://nick-kiianovskyi.github.io/portfolio/#person"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Featured projects",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 6,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "GardenPay",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "description": "Accounting system for a gardening community.",
+              "url": "https://garden-pay-seven.vercel.app/",
+              "codeRepository": "https://github.com/Nick-Kiianovskyi/GardenPay"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Migration-Data-Analyzer",
+              "applicationCategory": "DeveloperApplication",
+              "operatingSystem": "Web",
+              "description": "Web application for comparing datasets before and after migration.",
+              "url": "https://migrato-five.vercel.app/",
+              "codeRepository": "https://github.com/Nick-Kiianovskyi/Migration-Data-Analyzer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Memorii",
+              "applicationCategory": "ProductivityApplication",
+              "operatingSystem": "Web",
+              "description": "A platform for storing personal knowledge and memories.",
+              "url": "https://memorii-gamma.vercel.app/",
+              "codeRepository": "https://github.com/Nick-Kiianovskyi/memorii"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Schedule To ICS",
+              "applicationCategory": "ProductivityApplication",
+              "operatingSystem": "Web",
+              "description": "A converter of school schedules from Excel to Google Calendar.",
+              "url": "https://conv-schedule.vercel.app/",
+              "codeRepository": "https://github.com/Nick-Kiianovskyi/Conv_schedule"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "NAIAN",
+              "applicationCategory": "NewsApplication",
+              "operatingSystem": "Web",
+              "description": "Regional news intelligence platform.",
+              "url": "https://github.com/Nick-Kiianovskyi/NAIAN",
+              "codeRepository": "https://github.com/Nick-Kiianovskyi/NAIAN"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Railway Carrier Document Adaptation System",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "description": "Automated adaptation of railway transportation acts.",
+              "url": "https://github.com/Nick-Kiianovskyi/tartar",
+              "codeRepository": "https://github.com/Nick-Kiianovskyi/tartar"
+            }
+          }
+        ]
+      }
+    </script>
+    <script src="../js/site.js" defer></script>
+    <style>
+      .project-media::before {
+        content: "";
+        position: absolute;
+        inset: -60px;
+        z-index: 0;
+        background-image: var(--project-bg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(18px);
+      }
+
+      .project-media img {
+        z-index: 1;
+      }
+    </style>
   </head>
   <body class="page-home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
         <a class="site-logo" href="index.html">Mykola Kiianovskyi</a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-label"
-          ><span class="visually-hidden">Menu</span></label
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="header-menu"
         >
-        <div class="header-menu">
+          <span class="visually-hidden">Menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="header-menu" id="header-menu">
           <nav class="site-nav" aria-label="Section navigation">
             <ul>
               <li><a href="#home">Home</a></li>
@@ -112,9 +294,10 @@
         </nav>
       </aside>
 
-      <main>
+      <main id="main-content" tabindex="-1">
         <section class="hero" id="home" aria-labelledby="hero-heading">
           <div class="hero-body">
+            <p class="hero-kicker">SAP · Full Stack · Data</p>
             <h1 id="hero-heading" class="hero-name">Mykola Kiianovskyi</h1>
             <ul class="hero-positions">
               <li class="hero-position">
@@ -123,7 +306,7 @@
                   class="btn btn-cv"
                   href="../files/cv_fullstack_kiianovskyi.pdf"
                   download
-                  >CV</a
+                  >📋 CV</a
                 >
               </li>
               <li class="hero-position">
@@ -132,7 +315,7 @@
                   class="btn btn-cv"
                   href="../files/cv_SAP_SD_consultant.pdf"
                   download
-                  >CV</a
+                  >📋 CV</a
                 >
               </li>
               <li class="hero-position">
@@ -140,21 +323,19 @@
                   >Business Systems Specialist</span
                 >
                 <a
-                  class="btn btn-cv btn-cv--disabled"
-                  href="#"
-                  aria-disabled="true"
-                  tabindex="-1"
-                  >CV</a
+                  class="btn btn-cv"
+                  href="../files/cv_Business_Systems_Specialist_Kiianovskyi.pdf"
+                  download
+                  >📋 CV</a
                 >
               </li>
               <li class="hero-position">
                 <span class="hero-position-title">Data Analyst</span>
                 <a
-                  class="btn btn-cv btn-cv--disabled"
-                  href="#"
-                  aria-disabled="true"
-                  tabindex="-1"
-                  >CV</a
+                  class="btn btn-cv"
+                  href="../files/cv_Senior Data Analyst_Kiianovskyi.pdf"
+                  download
+                  >📋 CV</a
                 >
               </li>
             </ul>
@@ -279,6 +460,7 @@
         </section>
 
         <section class="about" id="about" aria-labelledby="about-heading">
+          <p class="section-label" aria-hidden="true">01 / ABOUT</p>
           <h2 id="about-heading">About Me</h2>
           <p>
             IT specialist with over 20 years of experience in software
@@ -293,39 +475,55 @@
             Currently building web applications with React, TypeScript and
             Supabase.
           </p>
-          <ul class="about-cards">
-            <li class="about-card">20+ Years Experience</li>
-            <li class="about-card">Full Stack Development</li>
-            <li class="about-card">SAP Expertise</li>
-            <li class="about-card">Data Analytics</li>
-            <li class="about-card">Business Automation</li>
-          </ul>
+          <dl class="about-facts">
+            <div class="about-fact">
+              <dt>Experience</dt>
+              <dd>20+ years</dd>
+            </div>
+            <div class="about-fact">
+              <dt>Focus</dt>
+              <dd>Full Stack development</dd>
+            </div>
+            <div class="about-fact">
+              <dt>Expertise</dt>
+              <dd>SAP</dd>
+            </div>
+            <div class="about-fact">
+              <dt>Analytics</dt>
+              <dd>Data</dd>
+            </div>
+            <div class="about-fact">
+              <dt>Automation</dt>
+              <dd>Business</dd>
+            </div>
+          </dl>
         </section>
 
         <section class="statistics" aria-labelledby="stats-heading">
           <h2 id="stats-heading" class="visually-hidden">Statistics</h2>
-          <ul class="stats-grid">
-            <li class="stat-card">
-              <p class="stat-value">20+</p>
-              <p class="stat-label">Years in IT</p>
-            </li>
-            <li class="stat-card">
-              <p class="stat-value">20+</p>
-              <p class="stat-label">Completed Projects</p>
-            </li>
-            <li class="stat-card">
-              <p class="stat-value">5+</p>
-              <p class="stat-label">Technology Domains</p>
-            </li>
-            <li class="stat-card">
-              <p class="stat-value">1000+</p>
-              <p class="stat-label">Business Users Supported</p>
-            </li>
-          </ul>
+          <dl class="stats-grid">
+            <div class="stat-card">
+              <dt class="stat-label">Years in IT</dt>
+              <dd class="stat-value">20+</dd>
+            </div>
+            <div class="stat-card">
+              <dt class="stat-label">Completed Projects</dt>
+              <dd class="stat-value">20+</dd>
+            </div>
+            <div class="stat-card">
+              <dt class="stat-label">Technology Domains</dt>
+              <dd class="stat-value">5+</dd>
+            </div>
+            <div class="stat-card">
+              <dt class="stat-label">Business Users Supported</dt>
+              <dd class="stat-value">1000+</dd>
+            </div>
+          </dl>
         </section>
 
         <section class="stack" id="stack" aria-labelledby="stack-heading">
           <header class="section-header">
+            <p class="section-label" aria-hidden="true">02 / STACK</p>
             <h2 id="stack-heading">Technical Stack</h2>
             <p class="section-subtitle">Skills grouped by focus areas</p>
           </header>
@@ -397,6 +595,7 @@
           aria-labelledby="timeline-heading"
         >
           <header class="section-header">
+            <p class="section-label" aria-hidden="true">03 / CAREER</p>
             <h2 id="timeline-heading">Career Journey</h2>
           </header>
           <ol class="timeline">
@@ -406,7 +605,8 @@
                 <header class="timeline-card-header">
                   <h3>Data Analyst</h3>
                   <p class="timeline-period">
-                    2024 — Present · Independent practice
+                    <time datetime="2024">2024</time> — Present · Independent
+                    practice
                   </p>
                 </header>
                 <ul class="timeline-list">
@@ -422,7 +622,9 @@
               <article class="timeline-card">
                 <header class="timeline-card-header">
                   <h3>Consultant SAP SD, QM</h3>
-                  <p class="timeline-period">05/2024 — Present</p>
+                  <p class="timeline-period">
+                    <time datetime="2024-05">05/2024</time> — Present
+                  </p>
                 </header>
                 <ul class="timeline-list">
                   <li>
@@ -449,7 +651,10 @@
               <article class="timeline-card">
                 <header class="timeline-card-header">
                   <h3>Consultant SAP SD</h3>
-                  <p class="timeline-period">03/2017 — 05/2024</p>
+                  <p class="timeline-period">
+                    <time datetime="2017-03">03/2017</time> —
+                    <time datetime="2024-05">05/2024</time>
+                  </p>
                 </header>
                 <ul class="timeline-list">
                   <li>
@@ -473,7 +678,11 @@
                   <h3>
                     Project Manager, IT Consultant, Data Analyst, Developer
                   </h3>
-                  <p class="timeline-period">2013–2017</p>
+                  <p class="timeline-period">
+                    <time datetime="2013">2013</time>–<time datetime="2017"
+                      >2017</time
+                    >
+                  </p>
                 </header>
                 <ul class="timeline-list">
                   <li>Managing project teams (5–15 participants)</li>
@@ -499,7 +708,11 @@
                     Head of Division, Lead Software Engineer, ArcelorMittal
                     Kryvyi Rih
                   </h3>
-                  <p class="timeline-period">2001–2013</p>
+                  <p class="timeline-period">
+                    <time datetime="2001">2001</time>–<time datetime="2013"
+                      >2013</time
+                    >
+                  </p>
                 </header>
                 <ul class="timeline-list">
                   <li>
@@ -522,6 +735,7 @@
           aria-labelledby="work-experience-heading"
         >
           <header class="section-header">
+            <p class="section-label" aria-hidden="true">04 / EXPERIENCE</p>
             <h2 id="work-experience-heading">Work experience</h2>
             <p class="section-subtitle">
               20+ years in SAP, software development and analytics
@@ -545,14 +759,21 @@
           aria-labelledby="featured-heading"
         >
           <header class="section-header">
+            <p class="section-label" aria-hidden="true">05 / PROJECTS</p>
             <h2 id="featured-heading">Featured Projects</h2>
             <p class="section-subtitle">
               Selected works with live demos and source code
             </p>
           </header>
           <div class="projects-grid">
-            <article class="project-card">
-              <figure class="project-media">
+            <article
+              class="project-card"
+              aria-labelledby="project-gardenpay-title"
+            >
+              <figure
+                class="project-media"
+                style="--project-bg: url(&quot;../images/GP1.jpg&quot;)"
+              >
                 <img
                   src="../images/GP1.jpg"
                   alt="GardenPay project preview"
@@ -560,42 +781,54 @@
                   height="360"
                   loading="lazy"
                   decoding="async"
+                  style="object-fit: contain; transform: none"
                 />
-                <figcaption class="project-overlay">
-                  <p class="project-desc">
-                    Accounting system for a gardening community.
-                  </p>
-                  <ul class="project-tags">
-                    <li class="project-tag">React</li>
-                    <li class="project-tag">TypeScript</li>
-                    <li class="project-tag">PostgreSQL</li>
-                    <li class="project-tag">Supabase</li>
-                  </ul>
-                  <div class="project-actions">
-                    <a
-                      class="btn btn-primary"
-                      href="https://garden-pay-seven.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                      >Live Demo</a
-                    >
-                    <a
-                      class="btn btn-secondary"
-                      href="https://github.com/Nick-Kiianovskyi/GardenPay"
-                      target="_blank"
-                      rel="noopener"
-                      >GitHub</a
-                    >
-                  </div>
-                </figcaption>
               </figure>
-              <div class="project-header">
-                <h3>GardenPay</h3>
+              <div class="project-body">
+                <h3 class="visually-hidden" id="project-gardenpay-title">
+                  GardenPay
+                </h3>
+                <p class="project-desc">
+                  Accounting for garden community members, fees and expenses
+                  with a transparent transaction history.
+                </p>
+                <p class="project-result">
+                  <span class="project-result-label">Result:</span>
+                  a working web app with a public demo and open source.
+                </p>
+                <ul class="project-tags">
+                  <li class="project-tag">React</li>
+                  <li class="project-tag">TypeScript</li>
+                  <li class="project-tag">PostgreSQL</li>
+                  <li class="project-tag">Supabase</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://garden-pay-seven.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live demo</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/Nick-Kiianovskyi/GardenPay"
+                    target="_blank"
+                    rel="noopener"
+                    >Code &amp; details on GitHub</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="project-card">
-              <figure class="project-media">
+            <article
+              class="project-card"
+              aria-labelledby="project-migration-title"
+            >
+              <figure
+                class="project-media"
+                style="--project-bg: url(&quot;../images/MA2.png&quot;)"
+              >
                 <img
                   src="../images/MA2.png"
                   alt="Migration-Data-Analyzer project preview"
@@ -603,45 +836,56 @@
                   height="360"
                   loading="lazy"
                   decoding="async"
+                  style="object-fit: contain; transform: none"
                 />
-                <figcaption class="project-overlay">
-                  <p class="project-desc">
-                    Data migration analyzer built with React, TypeScript,
-                    Node.js, Express and Vite. A web application for comparing
-                    datasets before and after migration.
-                  </p>
-                  <ul class="project-tags">
-                    <li class="project-tag">React</li>
-                    <li class="project-tag">TypeScript</li>
-                    <li class="project-tag">Node.js</li>
-                    <li class="project-tag">Express</li>
-                    <li class="project-tag">Vite</li>
-                  </ul>
-                  <div class="project-actions">
-                    <a
-                      class="btn btn-primary"
-                      href="https://migrato-five.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                      >Demo</a
-                    >
-                    <a
-                      class="btn btn-secondary"
-                      href="https://github.com/Nick-Kiianovskyi/Migration-Data-Analyzer"
-                      target="_blank"
-                      rel="noopener"
-                      >GitHub</a
-                    >
-                  </div>
-                </figcaption>
               </figure>
-              <div class="project-header">
-                <h3>Migration-Data-Analyzer</h3>
+              <div class="project-body">
+                <h3 class="visually-hidden" id="project-migration-title">
+                  Migration-Data-Analyzer
+                </h3>
+                <p class="project-desc">
+                  Compares datasets before and after migration and finds
+                  discrepancies without manual queries.
+                </p>
+                <p class="project-result">
+                  <span class="project-result-label">Result:</span>
+                  a web tool that matches records and shows differences; demo
+                  and code are public.
+                </p>
+                <ul class="project-tags">
+                  <li class="project-tag">React</li>
+                  <li class="project-tag">TypeScript</li>
+                  <li class="project-tag">Node.js</li>
+                  <li class="project-tag">Express</li>
+                  <li class="project-tag">Vite</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://migrato-five.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live demo</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/Nick-Kiianovskyi/Migration-Data-Analyzer"
+                    target="_blank"
+                    rel="noopener"
+                    >Code &amp; details on GitHub</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="project-card">
-              <figure class="project-media">
+            <article
+              class="project-card"
+              aria-labelledby="project-memorii-title"
+            >
+              <figure
+                class="project-media"
+                style="--project-bg: url(&quot;../images/memorii1.png&quot;)"
+              >
                 <img
                   src="../images/memorii1.png"
                   alt="Memorii project preview"
@@ -649,41 +893,53 @@
                   height="360"
                   loading="lazy"
                   decoding="async"
+                  style="object-fit: contain; transform: none"
                 />
-                <figcaption class="project-overlay">
-                  <p class="project-desc">
-                    A platform for storing personal knowledge and memories.
-                  </p>
-                  <ul class="project-tags">
-                    <li class="project-tag">React</li>
-                    <li class="project-tag">Node.js</li>
-                    <li class="project-tag">PostgreSQL</li>
-                  </ul>
-                  <div class="project-actions">
-                    <a
-                      class="btn btn-primary"
-                      href="https://memorii-gamma.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                      >Demo</a
-                    >
-                    <a
-                      class="btn btn-secondary"
-                      href="https://github.com/Nick-Kiianovskyi/memorii"
-                      target="_blank"
-                      rel="noopener"
-                      >GitHub</a
-                    >
-                  </div>
-                </figcaption>
               </figure>
-              <div class="project-header">
-                <h3>Memorii</h3>
+              <div class="project-body">
+                <h3 class="visually-hidden" id="project-memorii-title">
+                  Memorii
+                </h3>
+                <p class="project-desc">
+                  A personal space for structuring knowledge and memories linked
+                  to dates and topics.
+                </p>
+                <p class="project-result">
+                  <span class="project-result-label">Result:</span>
+                  a working prototype with a public demo and open source.
+                </p>
+                <ul class="project-tags">
+                  <li class="project-tag">React</li>
+                  <li class="project-tag">Node.js</li>
+                  <li class="project-tag">PostgreSQL</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://memorii-gamma.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live demo</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/Nick-Kiianovskyi/memorii"
+                    target="_blank"
+                    rel="noopener"
+                    >Code &amp; details on GitHub</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="project-card">
-              <figure class="project-media">
+            <article
+              class="project-card"
+              aria-labelledby="project-schedule-ics-title"
+            >
+              <figure
+                class="project-media"
+                style="--project-bg: url(&quot;../images/Conv_ICS1.png&quot;)"
+              >
                 <img
                   src="../images/Conv_ICS1.png"
                   alt="Schedule To ICS project preview"
@@ -691,41 +947,52 @@
                   height="360"
                   loading="lazy"
                   decoding="async"
+                  style="object-fit: contain; transform: none"
                 />
-                <figcaption class="project-overlay">
-                  <p class="project-desc">
-                    A converter of school schedules from Excel to Google
-                    Calendar.
-                  </p>
-                  <ul class="project-tags">
-                    <li class="project-tag">Python</li>
-                    <li class="project-tag">OpenPyXL</li>
-                  </ul>
-                  <div class="project-actions">
-                    <a
-                      class="btn btn-primary"
-                      href="https://conv-schedule.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                      >Demo</a
-                    >
-                    <a
-                      class="btn btn-secondary"
-                      href="https://github.com/Nick-Kiianovskyi/Conv_schedule"
-                      target="_blank"
-                      rel="noopener"
-                      >GitHub</a
-                    >
-                  </div>
-                </figcaption>
               </figure>
-              <div class="project-header">
-                <h3>Schedule To ICS</h3>
+              <div class="project-body">
+                <h3 class="visually-hidden" id="project-schedule-ics-title">
+                  Schedule To ICS
+                </h3>
+                <p class="project-desc">
+                  Converts school schedules from Excel into Google Calendar
+                  events without manual entry.
+                </p>
+                <p class="project-result">
+                  <span class="project-result-label">Result:</span>
+                  generates an ICS file that imports into Google Calendar; demo
+                  and code are public.
+                </p>
+                <ul class="project-tags">
+                  <li class="project-tag">Python</li>
+                  <li class="project-tag">OpenPyXL</li>
+                  <li class="project-tag">Excel</li>
+                  <li class="project-tag">Google Calendar</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://conv-schedule.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live demo</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/Nick-Kiianovskyi/Conv_schedule"
+                    target="_blank"
+                    rel="noopener"
+                    >Code &amp; details on GitHub</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="project-card">
-              <figure class="project-media">
+            <article class="project-card" aria-labelledby="project-naian-title">
+              <figure
+                class="project-media"
+                style="--project-bg: url(&quot;../images/Designer0.png&quot;)"
+              >
                 <img
                   src="../images/Designer0.png"
                   alt="NAIAN project preview"
@@ -733,100 +1000,113 @@
                   height="360"
                   loading="lazy"
                   decoding="async"
+                  style="object-fit: contain; transform: none"
                 />
-                <figcaption class="project-overlay">
-                  <p class="project-desc">
-                    Regional News Intelligence Platform.
-                  </p>
-                  <ul class="project-tags">
-                    <li class="project-tag">React 19</li>
-                    <li class="project-tag">TypeScript</li>
-
-                    <li class="project-tag">Celery / APScheduler</li>
-                    <li class="project-tag">RSS + BeautifulSoup</li>
-                    <li class="project-tag">OpenAI API</li>
-                  </ul>
-                  <div class="project-actions">
-                    <a class="btn btn-primary" href="#naian-coming-soon"
-                      >Demo</a
-                    >
-                    <a
-                      class="btn btn-secondary"
-                      href="https://github.com/Nick-Kiianovskyi/NAIAN"
-                      target="_blank"
-                      rel="noopener"
-                      >GitHub</a
-                    >
-                  </div>
-                </figcaption>
               </figure>
-              <div class="project-header">
-                <h3>NAIAN</h3>
+              <div class="project-body">
+                <h3 class="visually-hidden" id="project-naian-title">NAIAN</h3>
+                <p class="project-desc">
+                  Regional news intelligence: collects news, groups it by topic
+                  and enriches it with OpenAI.
+                </p>
+                <p class="project-result">
+                  <span class="project-result-label">Result:</span>
+                  architecture and a working prototype; the demo is coming soon
+                  and the code is open.
+                </p>
+                <ul class="project-tags">
+                  <li class="project-tag">React 19</li>
+                  <li class="project-tag">TypeScript</li>
+                  <li class="project-tag">FastAPI</li>
+                  <li class="project-tag">PostgreSQL</li>
+                  <li class="project-tag">OpenAI API</li>
+                </ul>
+                <div class="project-actions">
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-dialog-open="naian-coming-soon"
+                  >
+                    Demo
+                  </button>
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/Nick-Kiianovskyi/NAIAN"
+                    target="_blank"
+                    rel="noopener"
+                    >Code &amp; details on GitHub</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="project-card">
-              <figure class="project-media">
+            <article
+              class="project-card"
+              aria-labelledby="project-railway-title"
+            >
+              <figure
+                class="project-media"
+                style="--project-bg: url(&quot;../images/tartar0.png&quot;)"
+              >
                 <img
                   src="../images/tartar0.png"
-                  alt="Railway Carrier Document Adaptation System project preview"
+                  alt="Railway document adaptation system project preview"
                   width="640"
                   height="360"
                   loading="lazy"
                   decoding="async"
+                  style="object-fit: contain; transform: none"
                 />
-                <figcaption class="project-overlay">
-                  <p class="project-desc">
-                    Automated adaptation of railway transportation acts received
-                    from carriers.
-                  </p>
-                  <ul class="project-tags">
-                    <li class="project-tag">Excel</li>
-                    <li class="project-tag">VBA</li>
-                    <li class="project-tag">SQL</li>
-                  </ul>
-                  <div class="project-actions">
-                    <a
-                      class="btn btn-secondary"
-                      href="https://github.com/Nick-Kiianovskyi/tartar"
-                      target="_blank"
-                      rel="noopener"
-                      >GitHub</a
-                    >
-                  </div>
-                </figcaption>
               </figure>
-              <div class="project-header">
-                <h3>Railway Carrier Document Adaptation System</h3>
+              <div class="project-body">
+                <h3 class="visually-hidden" id="project-railway-title">
+                  Railway Carrier Document Adaptation System
+                </h3>
+                <p class="project-desc">
+                  Automated adaptation of railway transportation acts from
+                  different carriers into a single format.
+                </p>
+                <p class="project-result">
+                  <span class="project-result-label">Result:</span>
+                  unified document processing with less manual work.
+                </p>
+                <ul class="project-tags">
+                  <li class="project-tag">Excel</li>
+                  <li class="project-tag">VBA</li>
+                  <li class="project-tag">SQL</li>
+                </ul>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/Nick-Kiianovskyi/tartar"
+                    target="_blank"
+                    rel="noopener"
+                    >Code &amp; details on GitHub</a
+                  >
+                </div>
               </div>
             </article>
           </div>
         </section>
 
-        <div
-          class="notice"
+        <dialog
+          class="notice-dialog"
           id="naian-coming-soon"
-          role="dialog"
-          aria-modal="true"
           aria-labelledby="naian-coming-soon-title"
+          aria-describedby="naian-coming-soon-text"
         >
-          <a
-            class="notice-backdrop"
-            href="#projects"
-            aria-label="Close notification"
-          ></a>
-          <div class="notice-dialog">
-            <h2 id="naian-coming-soon-title">Project in development</h2>
-            <p>
-              The NAIAN demo will be available soon. Thank you for
-              understanding!
-            </p>
-            <a class="btn btn-primary" href="#projects">Close</a>
-          </div>
-        </div>
+          <h2 id="naian-coming-soon-title">Project in development</h2>
+          <p id="naian-coming-soon-text">
+            The NAIAN demo will be available soon. Thank you for understanding!
+          </p>
+          <form method="dialog">
+            <button class="btn btn-primary" type="submit">Close</button>
+          </form>
+        </dialog>
 
         <section class="education" id="education" aria-labelledby="edu-heading">
           <header class="section-header">
+            <p class="section-label" aria-hidden="true">06 / EDUCATION</p>
             <h2 id="edu-heading">Education</h2>
           </header>
           <div class="edu-grid">
@@ -838,7 +1118,9 @@
                   and Robotics
                 </h3>
                 <p class="edu-institution">Kryvyi Rih National University</p>
-                <p class="edu-meta">Expected Graduation: 2026</p>
+                <p class="edu-meta">
+                  Expected Graduation: <time datetime="2026">2026</time>
+                </p>
               </div>
             </article>
             <article class="edu-card">
@@ -846,7 +1128,11 @@
               <div class="edu-body">
                 <h3>Master's Degree in Economics</h3>
                 <p class="edu-institution">Kryvyi Rih National University</p>
-                <p class="edu-meta">2000–2001</p>
+                <p class="edu-meta">
+                  <time datetime="2000">2000</time>–<time datetime="2001"
+                    >2001</time
+                  >
+                </p>
               </div>
             </article>
             <article class="edu-card">
@@ -854,7 +1140,11 @@
               <div class="edu-body">
                 <h3>Specialist Degree in Economics and Mathematics</h3>
                 <p class="edu-institution">Kryvyi Rih National University</p>
-                <p class="edu-meta">1999–2000</p>
+                <p class="edu-meta">
+                  <time datetime="1999">1999</time>–<time datetime="2000"
+                    >2000</time
+                  >
+                </p>
               </div>
             </article>
             <article class="edu-card">
@@ -862,7 +1152,11 @@
               <div class="edu-body">
                 <h3>Bachelor's Degree in Economic Cybernetics</h3>
                 <p class="edu-institution">Kryvyi Rih National University</p>
-                <p class="edu-meta">1995–1999</p>
+                <p class="edu-meta">
+                  <time datetime="1995">1995</time>–<time datetime="1999"
+                    >1999</time
+                  >
+                </p>
               </div>
             </article>
           </div>
@@ -870,6 +1164,7 @@
 
         <section class="why-me" id="why" aria-labelledby="why-heading">
           <header class="section-header">
+            <p class="section-label" aria-hidden="true">07 / WHY ME</p>
             <h2 id="why-heading">Why Me</h2>
             <p class="section-subtitle">Unique value proposition</p>
           </header>
@@ -925,6 +1220,7 @@
           aria-labelledby="contact-heading"
         >
           <header class="section-header">
+            <p class="section-label" aria-hidden="true">08 / CONTACT</p>
             <h2 id="contact-heading">Contact</h2>
             <p class="section-subtitle">Get in touch</p>
           </header>

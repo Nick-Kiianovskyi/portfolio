@@ -1,14 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Work Experience — Mykola Kiianovskyi</title>
     <meta
       name="description"
       content="Detailed work experience of Mykola Kiianovskyi: SAP, Oracle, data analysis and project management."
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="fonts/onest-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/literata-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.css" media="all" />
     <link rel="stylesheet" href="css/resume.css" media="all" />
     <link rel="stylesheet" href="css/print.css" media="print" />
@@ -60,17 +78,64 @@
       name="twitter:image"
       content="https://nick-kiianovskyi.github.io/portfolio/images/og-cover.png"
     />
-    <meta name="theme-color" content="#12141a" />
+    <meta
+      name="theme-color"
+      content="#0e1014"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#f4f1ea"
+      media="(prefers-color-scheme: light)"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://nick-kiianovskyi.github.io/portfolio/#person",
+        "name": "Mykola Kiianovskyi",
+        "alternateName": "Микола Кияновський",
+        "url": "https://nick-kiianovskyi.github.io/portfolio/en/",
+        "image": "https://nick-kiianovskyi.github.io/portfolio/images/foto1.jpg",
+        "jobTitle": "Full Stack Developer, SAP Consultant, Data Analyst",
+        "email": "mailto:k.creideiki@gmail.com",
+        "sameAs": [
+          "https://github.com/Nick-Kiianovskyi",
+          "https://www.linkedin.com/in/nick-kiyanovskiy-537a90b6",
+          "https://t.me/nickel_2437"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": "https://nick-kiianovskyi.github.io/portfolio/work_experience_EN.html#profile",
+        "url": "https://nick-kiianovskyi.github.io/portfolio/work_experience_EN.html",
+        "name": "Work Experience — Mykola Kiianovskyi",
+        "inLanguage": "en",
+        "mainEntity": {
+          "@id": "https://nick-kiianovskyi.github.io/portfolio/#person"
+        }
+      }
+    </script>
+    <script src="js/site.js" defer></script>
   </head>
   <body class="page-resume">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
         <a class="site-logo" href="en/index.html">Mykola Kiianovskyi</a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-label"
-          ><span class="visually-hidden">Menu</span></label
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="header-menu"
         >
-        <div class="header-menu">
+          <span class="visually-hidden">Menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="header-menu" id="header-menu">
           <nav class="site-nav" aria-label="Main navigation">
             <ul>
               <li><a href="en/index.html">Home</a></li>
@@ -97,7 +162,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <article class="resume">
         <header class="resume-header">
           <h1>Mykola Kiianovskyi</h1>
@@ -189,7 +254,10 @@
           <ul class="resume-list">
             <li>
               <h3>Data Analyst</h3>
-              <p class="period">2024 — Present · Independent practice / freelance</p>
+              <p class="period">
+                <time datetime="2024">2024</time> — Present · Independent
+                practice / freelance
+              </p>
               <ul>
                 <li>Cleansing and preparing data</li>
                 <li>Transformation and filtering</li>
@@ -201,7 +269,8 @@
             <li>
               <h3>Consultant SAP SD, QM</h3>
               <p class="period">
-                05/2024 — Present · ArcelorMittal Kryvyi Rih, Ukraine
+                <time datetime="2024-05">05/2024</time> — Present ·
+                ArcelorMittal Kryvyi Rih, Ukraine
               </p>
               <p class="period">Civil Contractor Agreement</p>
               <ul>
@@ -225,7 +294,9 @@
             <li>
               <h3>Consultant SAP SD</h3>
               <p class="period">
-                03/2017 — 05/2024 · ArcelorMittal Kryvyi Rih, Ukraine
+                <time datetime="2017-03">03/2017</time> —
+                <time datetime="2024-05">05/2024</time> · ArcelorMittal Kryvyi
+                Rih, Ukraine
               </p>
               <ul>
                 <li>
@@ -247,7 +318,9 @@
                 Project Manager, IT Consultant, Data Analyst, Developer
               </h3>
               <p class="period">
-                09/2013 — 03/2017 · ArcelorMittal Kryvyi Rih, Ukraine
+                <time datetime="2013-09">09/2013</time> —
+                <time datetime="2017-03">03/2017</time> · ArcelorMittal Kryvyi
+                Rih, Ukraine
               </p>
               <ul>
                 <li>Managing project teams (5–15 participants)</li>
@@ -268,7 +341,9 @@
             <li>
               <h3>Head of Division, Lead Software Engineer</h3>
               <p class="period">
-                02/2001 — 09/2013 · ArcelorMittal Kryvyi Rih, Ukraine
+                <time datetime="2001-02">02/2001</time> —
+                <time datetime="2013-09">09/2013</time> · ArcelorMittal Kryvyi
+                Rih, Ukraine
               </p>
               <ul>
                 <li>
@@ -292,26 +367,38 @@
                 Technologies and Robotics
               </h3>
               <p class="period">
-                2022–2026 · Kryvyi Rih National University (expected graduation
-                06/2026)
+                <time datetime="2022">2022</time>–<time datetime="2026"
+                  >2026</time
+                >
+                · Kryvyi Rih National University (expected graduation
+                <time datetime="2026-06">06/2026</time>)
               </p>
             </li>
             <li>
               <h3>Master's Degree in Economics</h3>
               <p class="period">
-                2000–2001 · Kryvyi Rih National University
+                <time datetime="2000">2000</time>–<time datetime="2001"
+                  >2001</time
+                >
+                · Kryvyi Rih National University
               </p>
             </li>
             <li>
               <h3>Economist-mathematician</h3>
               <p class="period">
-                1999–2000 · Kryvyi Rih National University
+                <time datetime="1999">1999</time>–<time datetime="2000"
+                  >2000</time
+                >
+                · Kryvyi Rih National University
               </p>
             </li>
             <li>
               <h3>Bachelor's Degree in Economic Cybernetics</h3>
               <p class="period">
-                1995–1999 · Kryvyi Rih National University
+                <time datetime="1995">1995</time>–<time datetime="1999"
+                  >1999</time
+                >
+                · Kryvyi Rih National University
               </p>
             </li>
           </ul>
@@ -322,8 +409,9 @@
           <ul class="resume-list">
             <li>
               <p>
-                Set up the sales process at the enterprises LMZ (2018) and
-                Steelservice (2019).
+                Set up the sales process at the enterprises LMZ
+                (<time datetime="2018">2018</time>) and Steelservice
+                (<time datetime="2019">2019</time>).
               </p>
             </li>
             <li>
